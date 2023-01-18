@@ -1,6 +1,12 @@
 import { printLine } from './modules/print';
 
-console.log('Content script works!');
-console.log('Must reload extension for modifications to take effect.');
+console.log('START CONTENT SCRIPT INDEX.JS')
+printLine('START CONTENT SCRIPT INDEX.JS')
 
-printLine("Using the 'printLine' function from the Print Module");
+const planEstimateElement = document.querySelector('[aria-label="Plan Estimate editor"]');
+
+printLine("planEstimateElement" + planEstimateElement)
+
+const actualPointsElement = document.querySelector('[aria-label="Actual Points editor"]');
+
+printLine("actualPointsElement" + actualPointsElement)
