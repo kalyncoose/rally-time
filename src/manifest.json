@@ -4,8 +4,6 @@
   "description": "Easily convert developer time to Rally Actual Points.",
   "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
-  "host_permissions": ["https://rally1.rallydev.com/"],
-  "permissions": ["activeTab","scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon-34.png"
@@ -15,7 +13,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "matches": ["http://*.rallydev.com/*", "https://*.rallydev.com/*"],
+      "run_at": "document_end",
       "js": ["contentScript.bundle.js"],
       "css": ["content.styles.css"]
     }
