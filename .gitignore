@@ -16,8 +16,8 @@
 .env.test.local
 .env.production.local
 .history
-.idea
-.vscode
+.idea/
+.vscode/
 
 # secrets
 secrets.*.js
