@@ -1,12 +1,6 @@
 import { printLine } from './modules/print';
 
-console.log('START CONTENT SCRIPT INDEX.JS')
-printLine('START CONTENT SCRIPT INDEX.JS')
+console.log('Content script works!');
+console.log('Content script works but with hot reloading!');
 
-const planEstimateElement = document.querySelector('[aria-label="Plan Estimate editor"]');
-
-printLine("planEstimateElement" + planEstimateElement)
-
-const actualPointsElement = document.querySelector('[aria-label="Actual Points editor"]');
-
-printLine("actualPointsElement" + actualPointsElement)
+printLine("Using the 'printLine' at pages/Content/index.js");
