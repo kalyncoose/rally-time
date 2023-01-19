@@ -9,9 +9,6 @@
 # production
 /build
 
-# zip
-/zip
-
 # misc
 .DS_Store
 .env.local
@@ -19,6 +16,8 @@
 .env.test.local
 .env.production.local
 .history
+.idea
+.vscode
 
 # secrets
 secrets.*.js
