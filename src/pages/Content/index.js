@@ -1,4 +1,4 @@
-console.log('[Rally Time] Content Script Started')
+console.log('[Rally Time] Content script started')
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.field === "Estimate") {

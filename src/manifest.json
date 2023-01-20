@@ -2,7 +2,6 @@
   "manifest_version": 3,
   "name": "Rally Time",
   "description": "Easily convert developer time to Rally Actual Points.",
-  "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
     "default_popup": "popup.html",
@@ -11,6 +10,9 @@
   "icons": {
     "128": "icon-128.png"
   },
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
     {
       "matches": ["http://*.rallydev.com/*", "https://*.rallydev.com/*"],
